@@ -1,3 +1,41 @@
-h1 {
-   font-size:100px;
+content{
+
+   margin:10px;
 }
+
+
+h1 {
+   font-size:25px;
+   color:aliceblue;
+   text-align: center;
+   background-color: cornflowerblue;
+}
+
+.box {
+
+float:left;
+width:180px;
+height:180px;
+margin-right:30px
+   
+}
+
+p { 
+color:aliceblue;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+}
+
+
+
+body{
+   background-color: rgb(19, 117, 246);
+ }
+
+ footer{
+   padding-top:25px;
+   padding-left:10px;
+  
+   
+ }
