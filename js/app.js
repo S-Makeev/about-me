@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 let userName = prompt('What is your name?');
 alert(`Welcome to this page, ${userName}! You will be given a set of 5 questions. Please, answer: yes/no or y/n to each question!`);
-
 
 
 let questionOneGuess = prompt('Do I have a guitar?').toLowerCase();
@@ -41,4 +41,66 @@ else if(questionFiveGuess === 'no' || questionFiveGuess === 'n'){
 }
 
 
-alert(`Thank  you for playing, ${userName}!`);
+let userInput = prompt(`It's a number guessing game. Enter your number from 1 to 10. You have 4 attempts. Good luck, ${userName} !`);
+
+let answer = 6;
+let attempt = 3;
+
+while(userInput !== answer)
+{
+  if(attempt === 0)
+  {
+    alert(`sorry, you've lost! The answer was ${answer}`);
+    break;
+  }
+  else if(userInput > answer)
+  {
+    userInput = prompt('Too high!');
+    attempt--;
+  }
+  else if(userInput < answer)
+  {
+    userInput = prompt('Too low!');
+    attempt--;
+  }
+  else {(alert(`You got it, it was ${answer}. Nice job!`));
+    break;
+  }
+}
+
+
+
+alert(`hey ${userName}, did you like the previous game? I know you did! Here is another guessing game.`);
+
+
+let movieAttempt = 6;
+let movies = ['fargo','shrek','inception','skyfall','leon','matrix'];
+let points = 0;
+
+
+while (movieAttempt > 0)
+{
+  let movieInput =  prompt(`You have ${movieAttempt} attempts left to guess my favourite movies. Good luck!`);
+  movieAttempt--;
+  for(let i = 0; i < movies.length; i++)
+  {
+    //console.log(`${movies}`);
+    if(movies[i] === movieInput)
+    {
+      alert(`Correct! You have ${movieAttempt} left`);
+      points++;
+    }
+    //      movieInput = prompt(`You still have ${movieAttempt} left`);
+  }
+}
+alert(`You've earned ${points} points!`);
+
+
+
+
+
+
+
+
+
+// alert(`Thank  you for playing, ${userName}!`);

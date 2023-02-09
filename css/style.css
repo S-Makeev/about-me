@@ -1,41 +1,58 @@
-content{
-
-   margin:10px;
-}
-
 
 h1 {
    font-size:25px;
    color:aliceblue;
    text-align: center;
-   background-color: cornflowerblue;
+   background-color: rgb(85, 52, 234);
 }
 
-.box {
+h2{
 
-float:left;
-width:180px;
-height:180px;
-margin-right:30px
+padding-left:25px;
+color:aliceblue;
+}
+
+h3{
+   Color:aliceblue;
+   padding-left: 25px;
+}
+
+body{
+   background-color: rgb(13, 172, 174);
+ }
+
+ ul {
+	list-style: disc;
+   padding-left: 25px;
    
 }
 
+.subElement{
+
+  list-style-type: circle; 
+}
+
+ol{
+  list-style-type: decimal;
+  padding-left: 25px;
+}
+
+.box {
+float:right;
+width:100px;
+height:100px;
+margin-left:30px;
+  
+}
+
 p { 
-color:aliceblue;
+color:rgb(251, 251, 251);   
 padding-top:10px;
 padding-bottom:10px;
 padding-left:10px;
 }
 
-
-
-body{
-   background-color: rgb(19, 117, 246);
- }
-
  footer{
    padding-top:25px;
-   padding-left:10px;
-  
-   
+   padding-left:25px;
  }
