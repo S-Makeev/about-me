@@ -43,7 +43,7 @@ else if(questionFiveGuess === 'no' || questionFiveGuess === 'n'){
 
 let userInput = prompt(`It's a number guessing game. Enter your number from 1 to 10. You have 4 attempts. Good luck, ${userName} !`);
 
-let answer = 6;
+let answer = Math.floor(Math.random() * 10)+1;
 let attempt = 3;
 
 while(userInput !== answer)
